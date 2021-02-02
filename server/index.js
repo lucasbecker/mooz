@@ -34,5 +34,4 @@ const startServer = () => {
   console.info(`server app running at ${address}:${port}`);
 }
 
-// inverter or logic abaixo
-server.listen(3000 || process.env.PORT, startServer);
+server.listen(process.env.PORT || 3000, startServer);
